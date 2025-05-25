@@ -9,7 +9,9 @@ var URLS = [                            // Add URL you want to cache in this lis
   '/hirdai-raam/index.css',
   '/hirdai-raam/index.js',
   '/hirdai-raam/images/icon-512.png',
-  '/hirdai-raam/vendor/banidb.umd.js'
+  '/hirdai-raam/vendor/banidb.umd.js',
+  '/hirdai-raam/vendor/anvaad.iife.js',
+  '/hirdai-raam/vendor/SantLipi-VF.ttf'
              // add path to those files here
 ]
 
