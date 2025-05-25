@@ -1,4 +1,6 @@
+
 const {buildApiUrl} = banidb;
+const {unicode} = anvaad;
 function debounceFetch(urlBuilder, delay = 300) {
   let timer = null;
   let controller = null;
@@ -99,10 +101,12 @@ const output = document.getElementById('out')
 input.addEventListener('input', () => {
   const q = input.value.trim()
 
-  if(!q) {
+  if(!q || q.length < 3) {
+    output.innerHTML = ""
     return
   }
 
+  input.value = unicode(input.value)
   output.textContent = 'Loading...'
 
   debouncedSearch(q)
